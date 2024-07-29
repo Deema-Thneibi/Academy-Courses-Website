@@ -1,0 +1,2342 @@
+/* public */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Be Vietnam Pro", sans-serif;
+    background-color:  rgba(247, 247, 248, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.container{
+    width:calc( 100% - 15.375rem);
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* header */
+@media screen and (max-width: 1182px) {
+    
+    .container{
+        width: calc( 100% - 2rem);
+    }
+
+
+    header .container .nav{
+        display: none;
+    }
+
+    header .container .auth{
+        gap: 1rem;
+        font-size: 0.875rem;
+    }
+
+    header .logo-nav .logo img{
+        aspect-ratio: 40/40;
+    }
+
+    header .container .login{
+        padding: 0.75rem 1.25rem;
+    }
+    
+    header .container .re-nav img{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        aspect-ratio: 34/34;
+    }
+
+   .auth .login:hover{
+        padding: 0.85rem 1.5rem;
+    }
+
+    .auth .signup:hover{
+        padding: 0.6rem 0.6rem;
+    }
+    
+}
+
+header{
+    background-color: rgba(247, 247, 248, 1);
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+header .container{
+    padding: 20px 0px 24px 0px;
+    font-size: 1.125rem;
+}
+
+header .row{
+    gap: 3.125rem;
+}
+
+header .logo img{
+    width: 100%;
+    aspect-ratio: 54/54;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header .logo-nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.125rem;
+    align-items: center;
+}
+
+header .nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.625rem;
+    align-items: center;
+    transition: color 1s;
+}
+
+header .nav a:hover{
+    color: rgba(255, 149, 0, 1);
+    background-color: rgba(241, 241, 243, 1);
+    padding:  0.875rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+
+header .active{
+    background-color: rgba(241, 241, 243, 1);
+    padding:  0.875rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+
+header .auth{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+header .login{
+    background-color: rgba(255, 149, 0, 1);
+    padding: 0.875rem 2.125rem;
+    border-radius: 0.5rem;
+    transition: color 1s, padding 1s;
+}
+
+.login:hover{
+    color: rgba(241, 241, 243, 1);
+    padding: 1rem 2.2rem;
+}
+
+.signup{
+    transition: color 1s, border 1s, padding 1s, border-radius 1s;
+}
+
+.signup:hover{
+    color:  rgba(255, 149, 0, 1);
+    box-sizing: content-box;
+    border: solid  rgba(255, 149, 0, 1);
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.5rem;
+}
+
+header .re-nav img{
+    display: none;
+}
+
+
+/* main */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+/* hero */
+@media screen and (max-width: 874px){
+    .rows .hero-logo img{
+        aspect-ratio: 48/48;
+    }
+
+    .hero .hero-logo h1{
+        font-size: 36px;
+    }
+
+    .hero .hero-logo{
+        padding: 15px 12px;
+        margin-bottom: 16px;
+    }
+
+    .hero .rows h2{
+        font-size: 28px;
+        margin-bottom: 6px;
+   }
+
+   .hero .rows p{
+    font-size: 16px;
+    margin-bottom: 50px;
+   }
+
+
+   .hero .button .E-course{
+    padding: 14px 20px;
+    font-size: 14px;
+   } 
+
+   .hero .button .V-course{
+    padding: 14px 20px;
+    font-size: 14px;
+   }
+
+}
+
+@media screen and (max-width: 676px){
+
+    .hero .rows .hero-logo h1{
+        font-size: 30px;
+    }
+
+    .hero .rows .hero-logo{
+        padding: 14px;
+    }
+
+    .hero .icon .rows h2{
+        font-size: 24px;
+   }
+
+   .hero .hero-logo::before{
+    top:5px;
+    left:5px;
+  }
+
+}
+
+@media screen and (max-width: 589px){
+
+    .hero .icon .rows .hero-logo h1{
+        font-size: 25px;
+    }
+
+    .hero .icon .hero-logo::before{
+        top:20px;
+        left:25px;
+      }
+}
+
+@media screen and (max-width: 512px){
+
+    .hero .icon .rows .hero-logo h1{
+        font-size: 16px;
+    }
+
+    .hero .icon .hero-logo::before{
+        top:0px;
+        left:20px;
+      }
+}
+
+@media screen and (max-width: 375px){
+
+    .hero .icon .rows .hero-logo  .title {
+        font-size: 14px;
+    }
+
+    .hero .rows .hero-logo img{
+        aspect-ratio: 35/35;
+        width: 15%;
+    }
+
+
+    .hero .icon .rows h2{
+        font-size: 20px;
+   }
+
+   .hero .icon .rows p{
+    font-size: 13px;
+    }
+
+   .hero .rows .hero-logo{
+    padding: 2px;
+    }
+
+
+    .hero .icon .rows .hero-logo::before{
+        top:0px;
+        left:0px;
+      }
+
+      .hero .icon .button .E-course{
+        padding: 10px 15px;
+        font-size: 13px;
+       } 
+    
+       .hero .icon .button .V-course{
+        padding: 10px 15px;
+        font-size: 13px;
+       }
+}
+
+.hero{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.hero .rows{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(252, 252, 253, 1);
+    padding: 19px 20px;
+    gap:10px;
+    border-radius: 11px;
+    margin-bottom: 20px;
+}
+
+.hero-logo img{
+    aspect-ratio: 62/62;
+    display: flex;
+}
+
+.hero-logo span{
+    color:rgba(255, 149, 0, 1);
+}
+
+.hero h1{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.rows h2{
+     font-size: 37px;
+     font-weight: 500;
+     margin-bottom: 10px;
+}
+
+.rows p{
+     font-size: 18px;
+     margin-bottom: 60px;
+     text-align: center;
+}
+ 
+.icon{
+    padding: 30px 0px 0px 30px;
+    position: relative;
+    z-index: 0;
+}
+.hero-logo::before{
+    content: url(../img/hero/icon.svg);
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 2;
+
+}
+
+.button{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px ;
+}
+
+.button .E-course{
+    background-color: rgba(255, 149, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 18px 24px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    transition:  background-color 1s, color 1s;
+}
+
+.button .V-course{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(38, 38, 38, 1);
+    padding: 18px 24px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 1s;
+}
+
+.E-course:hover{
+    background-color: rgba(255, 255, 255, 1);
+    color:rgba(255, 149, 0, 1);
+}
+
+.V-course:hover{
+    color: rgba(255, 149, 0, 1);
+}
+
+
+/* brand */
+ @media screen and (max-width: 850px) and (min-width: 750px){
+
+    .brand .container img{
+        width: calc( 100% / 5);
+    }
+}
+
+@media screen and (max-width: 750px) and (min-width: 500px){
+
+    .brand .container img{
+        width: calc( 100% / 4);
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .brand .container img{
+        width: calc( 100% / 3);
+    }
+} 
+
+@media screen and (max-width: 370px){
+
+    .brand .container img{
+        width: calc( 100% / 2);
+    }
+} 
+
+.brand .row{
+    flex-wrap: nowrap;
+    overflow: auto;
+    background-color: rgba(252, 252, 253, 1);
+}
+
+.brand img{
+    width: calc( 100% / 7);
+}
+
+
+/* picture */
+.picture{
+    width: 100%;
+}
+
+.picture .container .row{
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.picture .container img:first-of-type{
+    width: 100%;
+    filter: brightness(77%);
+    object-fit: cover;
+}
+
+.picture .circle{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 14px;
+    border-radius: 50%;
+    border: solid 6px;
+    border-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top:47%;
+    border-style: solid;
+}
+
+.picture .circle:hover {
+    background-color:  rgba(0, 0, 0, 1);
+}
+
+
+
+/* benefits */
+@media screen and (max-width: 915px) and (min-width: 650px){
+
+    .benefits .container .item{
+        gap: 40px;
+        padding: 40px;
+        width: calc( (100% - 40px) / 3);
+        border-radius: 10px;
+    }
+    
+    .benefits .container .num{
+        font-size: 37px;
+    }
+    
+    
+    
+    .benefits .container .description h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .benefits  .container .description p{
+        font-size: 16px;
+    }
+    
+    .benefits .container img{
+        padding: 14px;
+        border-radius: 6px;
+    }  
+}
+
+@media screen and (max-width: 650px) and (min-width: 460px){
+
+    .benefits .container .item{
+        gap: 30px;
+        padding: 30px;
+        width: calc( (100% - 20px) / 2);
+        border-radius: 8px;
+    }
+    
+    .benefits .container .num{
+        font-size: 35px;
+    }
+    
+    
+    
+    .benefits .container .description h3{
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    
+    .benefits  .container .description p{
+        font-size: 14px;
+    }
+    
+    .benefits .container img{
+        padding: 12px;
+        border-radius: 6px;
+    }  
+
+    
+    .benefits .container .row .info h2{
+        font-size: 40px;
+    }
+    
+    .benefits .row .info p{
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+    
+    .benefits .container .row .view a{
+        font-size: 14px;
+        padding: 14px 20px;
+        border-radius: 6px;
+    }
+    
+
+}
+
+@media screen and (max-width: 460px) and (min-width: 360px){
+
+    .benefits .container .item{
+        gap: 30px;
+        padding: 30px;
+        width: 100% ;
+        border-radius: 8px;
+    }
+    
+    .benefits .container .num{
+        font-size: 35px;
+    }
+    
+    
+    
+    .benefits .container .description h3{
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    
+    .benefits  .container .description p{
+        font-size: 14px;
+    }
+    
+    .benefits .container img{
+        padding: 12px;
+        border-radius: 6px;
+    }  
+
+    .benefits .row .title{
+        flex-wrap: wrap;
+    }
+
+    .benefits .container .row .info h2{
+        font-size: 38px;
+    }
+    
+    .benefits .row .info p{
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+    
+    .benefits .container .row .view a{
+        font-size: 14px;
+        padding: 14px 20px;
+        border-radius: 6px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .benefits .container .item{
+        gap: 22px;
+        padding: 22px;
+        width: 100% ;
+        border-radius: 6px;
+    }
+    
+    .benefits .container .num{
+        font-size: 32px;
+    }
+    
+    
+    
+    .benefits .container .description h3{
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    
+    .benefits  .container .description p{
+        font-size: 14px;
+    }
+    
+    .benefits .container img{
+        padding: 12px;
+        border-radius: 6px;
+        object-fit: cover;
+    }  
+
+    .benefits .row .title{
+        flex-wrap: wrap;
+    }
+
+    .benefits .container .row .info h2{
+        font-size: 28px;
+    }
+    
+    .benefits .row .info  p{
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+    
+    .benefits .container .row view a{
+        font-size: 14px;
+        padding: 14px 20px;
+        border-radius: 6px;
+    }
+    
+}
+
+.benefits .title{
+    display: flex;
+    gap:10px;
+}
+
+.benefits .info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:6px;
+}
+
+.benefits .info h2{
+    font-size: 48px;
+    font-weight: 600;
+    color: rgba(38, 38, 38, 1);
+}
+
+.benefits .info p{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(89, 89, 90, 1);
+    line-height: 27px;
+    margin-bottom: 80px;
+}
+
+.benefits .container .view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.benefits .container .view a{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(38, 38, 38, 1);
+    padding: 18px 24px;
+    border-radius: 8px;
+    background-color: rgba(252, 252, 253, 1);
+    transition: color 1s, background-color 1s;
+}
+
+.benefits .view a:hover{
+    color: rgba(241, 241, 243, 1);
+    background-color: rgba(255, 149, 0, 1);
+}
+
+.benefits .row{
+    gap: 20px;
+}
+
+.benefits .item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 50px;
+    width: calc( (100% - 40px) / 3);
+    border-radius: 12px;
+    box-shadow: 2px 4px 20px 0px rgba(150, 150, 150, 0.6);
+    transition: background-color 1s, color 1s;
+}
+
+.benefits .num{
+    display: flex;
+    justify-content:flex-end;
+    flex-wrap: wrap;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgba(38, 38, 38, 1);
+}
+
+.benefits .description h3{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    color: rgba(51, 51, 51, 1);
+}
+
+.benefits .description span{
+    visibility: hidden;
+}
+
+.benefits .description p{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(76, 76, 77, 1);
+}
+
+.benefits .vector{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.benefits img{
+    background-color: rgba(252, 252, 253, 1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.benefits .container .row .item:hover{
+    background-color: rgba(255, 149, 0, 1);
+}
+
+.benefits .container .row .item:hover h1{
+    color: rgba(247, 247, 248, 1);
+}
+
+
+
+/* courses */
+@media screen and (max-width: 1000px)  and (min-width: 750px){
+    .courses .container .item{
+        padding: 40px;
+        gap: 45px;
+    }
+}
+
+
+ @media screen and (max-width: 750px)  and (min-width: 646px){
+
+    .courses .row .item{
+        padding: 30px;
+        gap: 38px;
+        border-radius: 8px;
+    }
+}
+
+
+@media screen and (max-width: 646px) and (min-width: 624px){
+    .courses .row .item{
+        padding: 25px;
+        gap: 40px;
+        border-radius: 8px;
+    }
+
+    .courses .container .row .info h2{
+        font-size: 40px;
+    }
+    
+    .courses .row .info p{
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+    
+    .courses .container .row .view a{
+        font-size: 14px;
+        padding: 14px 20px;
+        border-radius: 6px;
+    }
+}  
+
+@media screen and (max-width: 624px) and (min-width: 543px){
+    .courses .container .row{
+        gap: 25px;
+    }
+    
+    .courses .container .title{
+        gap:8px;
+    }
+    
+    .courses .container .info{
+        gap:5px;
+    }
+    
+    .courses .container .row .info h2{
+        font-size: 40px;
+    }
+    
+    .courses .row .info p{
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+    
+    .courses .container .row .view a{
+        font-size: 14px;
+        padding: 14px 20px;
+        border-radius: 6px;
+    }
+    
+    .courses .container .item{
+        padding: 20px;
+        gap: 35px;
+        border-radius: 8px;
+    }
+    
+    .courses .container img{
+        border-radius: 6px;
+    }
+    
+    .courses .container .max{
+        gap:20px;
+    }
+    
+    .courses .container .item .max .author{
+        gap: 8px;
+    }
+    
+    .courses .container .item .max .author .day{
+        gap: 8px;
+    }
+    
+    .courses .container .item .max .author .day p{
+        font-size: 12px;
+        padding: 6px 12px;
+        border-radius: 5px;
+    }
+    
+    .courses .container .item .max .author p{
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    
+    .courses .container .description{
+        gap: 8px;
+    }
+    
+    .courses .container .description h3{
+        font-size: 18px;
+    }
+    
+    .courses .container .description p{
+        font-size: 12px;
+        line-height: 20px;;
+    }
+    
+    .courses .container .button {
+        padding: 12px 20px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+}  
+
+@media screen and (max-width: 543px) and (min-width: 540px){
+    .courses .row .item{
+        width: 100%;
+    }
+
+    .courses .container .row .info h2{
+        font-size: 40px;
+    }
+    
+    .courses .row .info p{
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+    
+    .courses .container .row .view a{
+        font-size: 14px;
+        padding: 14px 20px;
+        border-radius: 6px;
+    }
+}  
+
+@media screen and (max-width: 540px) and (min-width: 450px){
+    .courses .row .item{
+        width: 100%;
+        padding: 35px;
+        gap: 40px;
+    }
+
+    .courses .container .row .info h2{
+        font-size: 40px;
+    }
+    
+    .courses .row .info p{
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+    
+    .courses .container .row .view a{
+        font-size: 14px;
+        padding: 14px 20px;
+        border-radius: 6px;
+    }
+}  
+
+@media screen and (max-width: 450px){
+    .courses .row .item{
+        width: 100%;
+        padding: 28px;
+        gap: 35px;
+    }
+
+    .courses .container .row .info h2{
+        font-size: 38px;
+    }
+    
+    .courses .row .info  p{
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+    
+    .courses .container .row view a{
+        font-size: 14px;
+        padding: 14px 20px;
+        border-radius: 6px;
+    }
+
+    .courses .container .title{
+        flex-wrap: wrap;
+    }
+}  
+
+
+.courses .row{
+    gap: 30px;
+}
+
+.courses .title{
+    display: flex;
+    gap:10px;
+}
+
+.courses .info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:6px;
+}
+
+.courses .info h2{
+    font-size: 48px;
+    font-weight: 600;
+    color: rgba(38, 38, 38, 1);
+}
+
+.courses .info p{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(89, 89, 90, 1);
+    line-height: 27px;
+    margin-bottom: 80px;
+}
+
+.courses .container .view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.courses .container .view a{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(38, 38, 38, 1);
+    padding: 18px 24px;
+    border-radius: 8px;
+    background-color: rgba(252, 252, 253, 1);
+    transition: color 1s, background-color 1s;
+}
+
+.courses .view a:hover{
+    color: rgba(241, 241, 243, 1);
+    background-color: rgba(255, 149, 0, 1);
+}
+
+
+.courses .item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc((100% - 30px) / 2);
+    background-color: rgba(255, 255, 255, 1);
+    padding: 50px;
+    gap: 57px;
+    border-radius: 10px;
+    border-color: rgba(241, 241, 243, 1);
+    border-style: solid;
+}
+
+.courses img{
+    width: 100%;
+    aspect-ratio: 683.5 / 380;
+    object-fit: cover;
+    border-radius: 8px;
+    display: flex;
+    box-shadow: 2px 4px 20px 0px rgba(150, 150, 150, 0.6);
+
+}
+
+.courses .max{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:30px;
+}
+
+.courses .item .max .author{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.courses .item .max .author .day{
+    display: flex;
+    gap: 10px;
+}
+
+.courses .item .max .author .day p{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 14px;
+    border-radius: 6px;
+    border-color: rgba(241, 241, 243, 1) ;
+    border-style: solid;
+    color: rgba(76, 76, 77, 1);
+}
+
+.courses .item .max .author p{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 14px;
+    color: rgba(38, 38, 38, 1);
+}
+
+.courses .description{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.courses .description h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(38, 38, 38, 1);
+
+}
+
+.courses .description p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(76, 76, 77, 1);
+    line-height: 24px;;
+}
+
+.courses .button {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+    background-color: rgba(247, 247, 248, 1);
+    border-radius: 6px;
+    border-color: rgba(241, 241, 243, 1);
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(38, 38, 38, 1);
+    border-style: solid;
+    transition: background-color 1s, border 1s, box-shadow 1s;
+}
+
+.courses .button a{
+    transition: color 0.7s;
+}
+
+.courses .button:hover {
+      background-color: rgba(255, 149, 0, 1);
+      border: none;
+      box-shadow: 2px 4px 20px 0px rgba(150, 150, 150, 0.6);
+}
+
+.courses .button:hover a{
+    color: white;
+}
+
+
+
+/* testimonials */
+
+@media screen and (max-width: 1020px) and (min-width: 963px){
+    .testimonials .row .parag{
+        padding: 40px;
+    }
+
+    .testimonials .row .info{
+        padding: 27px 40px;
+    }
+}
+
+@media screen and (max-width: 963px) and (min-width: 903px){
+    .testimonials .row .parag{
+        padding: 30px;
+    }
+
+    .testimonials .row .info{
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 903px) and (min-width: 841px){
+    .testimonials .row .parag{
+        padding: 30px;
+        font-size: 16px;
+        line-height: 25px;
+
+    }
+
+    .testimonials .row .info{
+        padding: 20px 30px;
+    }
+
+    
+    .testimonials .row .info-1{
+        gap: 8px;
+    }
+    
+    .testimonials .row .info-1 p{
+        font-size: 16px;
+    }
+    
+    .testimonials .row .button{
+        font-size: 16px;
+        padding: 16px 20px;
+    }
+    
+}
+
+@media screen and (max-width: 841px) and (min-width: 739px){
+    .testimonials .row .parag{
+        padding: 30px;
+        font-size: 13px;
+        line-height: 20px;
+
+    }
+
+    .testimonials .row .info{
+        padding: 20px 30px;
+    }
+
+    
+    .testimonials .row .info-1{
+        gap: 8px;
+    }
+    
+    .testimonials .row .info-1 p{
+        font-size: 13px;
+    }
+    
+    .testimonials .row .button{
+        font-size: 13px;
+        padding: 13px 18px;
+    }
+    
+}
+
+@media screen and (max-width: 739px){
+    .testimonials .row .parag{
+        padding: 25px;
+        font-size: 11px;
+        line-height: 17px;
+
+    }
+
+    .testimonials .row .info{
+        padding: 18px 25px;
+    }
+
+    
+    .testimonials .row .info-1{
+        gap: 6px;
+    }
+    
+    .testimonials .row .info-1 p{
+        font-size: 11px;
+    }
+    
+    .testimonials .row .button{
+        font-size: 11px;
+        padding: 11px 16px;
+    }
+    
+}
+
+@media screen and (max-width: 739px) and (min-width: 595px){
+
+    .testimonials .container .row .title .title-info h2{
+        font-size: 40px;
+    }
+    
+    .testimonials .row .title .title-inf p{
+        font-size: 16px;
+    }
+    
+    .testimonials .container .row .title .view a{
+        font-size: 14px;
+        padding: 14px 20px;
+        border-radius: 6px;
+    }
+
+    .testimonials .row .parag{
+        padding: 18px;
+        line-height: 17px;
+        font-size: 11px;
+    }
+
+    .testimonials .row .info{
+        padding: 12px 15px;
+    }
+
+    .testimonials .row .info-1{
+        gap: 6px;
+    }
+    
+    .testimonials .row .info-1 p{
+        font-size: 11px;
+    }
+    
+    .testimonials .row .button{
+        font-size: 11px;
+        padding: 8px 10px;
+    }
+    
+}
+
+@media screen and (max-width: 595px) and (min-width: 543px){
+
+    .testimonials .container .row{
+        gap: 25px;
+    }
+    
+    .testimonials .container .row .title{
+        gap:8px;
+    }
+    
+    .testimonials .container .title .title-info{
+        gap:5px;
+    }
+    
+    .testimonials .container .row .title .title-info h2{
+        font-size: 40px;
+    }
+    
+    .testimonials .row .title .title-info p{
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+    
+    .testimonials .container .row .title .view a{
+        font-size: 14px;
+        padding: 14px 20px;
+        border-radius: 6px;
+    }
+
+    .testimonials .row .parag{
+        padding: 18px;
+        line-height: 17px;
+        font-size: 8px;
+    }
+
+    .testimonials .row .info{
+        padding: 12px 15px;
+    }
+
+    .testimonials .row .info-1{
+        gap: 6px;
+    }
+    
+    .testimonials .row .info-1 p{
+        font-size: 10px;
+    }
+    
+    .testimonials .row .button{
+        font-size: 8px;
+        padding: 6px 8px;
+    }
+    
+}
+
+@media screen and (max-width: 543px){
+
+    .testimonials .row .item{
+        width: 100%;
+    }
+
+    .testimonials .container .row .title .title-info h2{
+        font-size: 35px;
+    }
+    
+    .testimonials .row .title .title-info p{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .testimonials .container .row .title{
+        flex-wrap: wrap;
+    }
+    
+    .testimonials .container .row .title .view a{
+        font-size: 14px;
+        padding: 18px 25px;
+        border-radius: 6px;
+    }
+    
+    .testimonials .container .row{
+        gap: 25px;
+    }
+    
+
+    
+    .testimonials .row .button{
+        padding: 14px 18px;
+    }
+
+    .testimonials .row .parag{
+        padding: 20px;
+    }
+    
+    .testimonials .row .info{
+        padding: 15px 20px;
+    }
+}
+
+
+.testimonials .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.testimonials .title{
+    display: flex;
+    gap:10px;
+}
+
+.testimonials .title-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:6px;
+}
+
+.testimonials .title-info h2{
+    font-size: 48px;
+    font-weight: 600;
+    color: rgba(38, 38, 38, 1);
+}
+
+.testimonials .title-info p{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(89, 89, 90, 1);
+    line-height: 27px;
+    margin-bottom: 80px;
+}
+
+.testimonials .container .view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.testimonials .container .view a{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(38, 38, 38, 1);
+    padding: 18px 24px;
+    border-radius: 8px;
+    background-color: rgba(252, 252, 253, 1);
+    transition: color 1s, background-color 1s;
+}
+
+.testimonials .view a:hover{
+    color: rgba(241, 241, 243, 1);
+    background-color: rgba(255, 149, 0, 1);
+}
+
+
+.testimonials .item{
+    background-color: rgba(255, 255, 255, 1);
+    width: calc( (100% - 30px) / 2);
+    border-radius: 12px;
+    border-color: rgba(241, 241, 243, 1);
+    border-style: solid;
+    border-width: 3px;
+}
+
+.testimonials .parag{
+    padding: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: rgba(76, 76, 77, 1);
+    text-align: justify;
+}
+
+.testimonials .info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 31.5px 50px;
+    justify-content: space-between;
+    background-color: rgba(252, 252, 253, 1);
+    border-top-color: rgba(241, 241, 243, 1);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    gap:2px;
+}
+
+.testimonials .info-1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.testimonials .info img{
+    aspect-ratio: 60 / 60;
+    display: flex;
+    box-shadow: 3px 4px 8px 0px rgba(150, 150, 150, 0.6);
+    border-radius: 8px;
+}
+
+.testimonials .info-1 p{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(51, 51, 51, 1);
+}
+
+.testimonials .button{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(38, 38, 38, 1);
+    padding: 18px 24px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: rgba(241, 241, 243, 1);
+    background-color: rgba(247, 247, 248, 1);
+    transition: background-color 1s, border 1s, box-shadow 1s;
+}
+
+
+.testimonials .button a{
+    transition: color 0.7s;
+}
+
+.testimonials .button:hover {
+      background-color: rgba(255, 149, 0, 1);
+      border: none;
+      box-shadow: 2px 4px 20px 0px rgba(150, 150, 150, 0.6);
+}
+
+.testimonials .button:hover a{
+    color: white;
+}
+
+
+
+
+/* pricing */
+
+@media screen and (max-width: 1081px) and (min-width: 877px){
+    .pricing .container .row{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .pricing .container .row-1{
+        width: calc(100% - 120px);
+        gap: 20px;
+    }
+
+    .pricing .container .plan{
+        gap: 40px;
+        width: calc( ( 100% - 20px) / 2);
+        padding: 40px 20px 20px 20px;
+    }
+
+    
+    .pricing .container .plan h3{
+        font-size: 60px;
+    }
+
+    .pricing .container .Features{
+        padding: 30px;
+    }
+    
+    .pricing .container .Features h4{
+        margin-bottom: 20px;
+    }
+    
+    .pricing  .container .Features ul{
+        padding: 0px 25px;
+        gap:15px;
+    }
+    
+    
+    .pricing .container .Features ul li{
+     gap: 10px;
+     padding: 12px;
+    }
+    
+    .pricing .container .Features ul li p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .pricing .container .plan a{
+        font-size: 16;
+        padding: 18px 20px;
+        margin-top: -40px;    
+    }
+}
+
+@media screen and (max-width: 877px) and (min-width: 753px){
+    .pricing .container .row{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .pricing .container .row-1{
+        width: calc(100% - 100px);
+        gap: 15px;
+    }
+
+    .pricing .container .plan{
+        gap: 30px;
+        width: calc( ( 100% - 15px) / 2);
+        padding: 30px 15px 15px 15px;
+    }
+
+    .pricing .container .plan .pl{
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    
+    .pricing .container .plan h3{
+        font-size: 50px;
+    }
+
+    .pricing .container .Features{
+        padding: 20px;
+    }
+    
+    .pricing .container .Features h4{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .pricing  .container .Features ul{
+        padding: 0px 20px;
+        gap:10px;
+    }
+    
+    
+    .pricing .container .Features ul li{
+     gap: 8px;
+     padding: 10px;
+    }
+    
+    .pricing .container .Features ul li p{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    
+    .pricing .container .plan a{
+        font-size: 15;
+        padding: 15px 15px;
+        margin-top: -30px;    
+    }
+}
+
+@media screen and (max-width: 753px) and (min-width: 602px){
+
+    .pricing .container .title h2{
+        font-size: 40px;
+    }
+    
+    .pricing .container .title  p{
+        font-size: 16px;
+    }
+
+    .pricing  .view .button{ 
+        padding: 10px;
+    }
+    
+    .pricing .container .title .view a{
+        font-size: 14px;
+        padding: 14px 20px;
+        border-radius: 6px;
+    }
+    .pricing .container .row{
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .pricing .container .row-1{
+        width: calc((100% - 90px));
+        gap: 12px;
+    }
+
+    .pricing .container .plan{
+        gap: 25px;
+        width: calc( ( 100% - 12px) / 2);
+        padding: 25px 12px 12px 12px;
+    }
+
+    .pricing .container .plan .pl{
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+
+    
+    .pricing .container .plan h3{
+        font-size: 35px;
+    }
+
+    .pricing .container .Features{
+        padding: 15px;
+    }
+    
+    .pricing .container .Features h4{
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+    
+    .pricing  .container .Features ul{
+        padding: 0px 15px;
+        gap:8px;
+    }
+    
+    
+    .pricing .container .Features ul li{
+     gap: 8px;
+     padding: 10px;
+    }
+    
+    .pricing .container .Features ul li p{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    
+    .pricing .container .plan a{
+        font-size: 12;
+        padding: 12px 12px;
+        margin-top: -20px;    
+    }
+}
+
+@media screen and (max-width: 602px) and (min-width: 450px){
+
+    .pricing .container .title{
+        gap:8px;
+    }
+    
+    .pricing .container .title .title-info{
+        gap:5px;
+    }
+    
+    .pricing .container .title  h2{
+        font-size: 40px;
+    }
+    
+    .pricing .row .title p{
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+
+    .pricing  .view .button{ 
+        padding: 10px;
+    }
+
+    
+    .pricing .container .title .view a{
+        font-size: 14px;
+        padding: 12px 18px;
+        border-radius: 6px;
+    }
+
+
+    .pricing .container .row{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .pricing .container .row-1{
+        width: calc(100% - 100px);
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .pricing .container .plan{
+        width:100%;
+        gap: 30px;
+        padding: 30px 15px 15px 15px;
+    }
+
+    .pricing .container .plan .pl{
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    
+    .pricing .container .plan h3{
+        font-size: 50px;
+    }
+
+    .pricing .container .Features{
+        padding: 20px;
+    }
+    
+    .pricing .container .Features h4{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .pricing  .container .Features ul{
+        padding: 0px 20px;
+        gap:10px;
+    }
+    
+    
+    .pricing .container .Features ul li{
+     gap: 8px;
+     padding: 10px;
+    }
+    
+    .pricing .container .Features ul li p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    
+    .pricing .container .plan a{
+        font-size: 15;
+        padding: 15px 15px;
+        margin-top: -30px;    
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .pricing .container .title h2{
+        font-size: 35px;
+    }
+    
+    .pricing .row .title p{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .pricing .container .title{
+        flex-wrap: wrap;
+    }
+
+    .pricing .container .title .view {
+            justify-content: flex-start;
+            align-items: flex-start;
+    }
+
+    .pricing  .container .view .button{ 
+        padding: 8px;
+    }
+
+    
+    .pricing .container .title .view a{
+        font-size: 14px;
+        padding: 15px 20px;
+        border-radius: 6px;
+    }
+    
+
+    .pricing .container .row{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .pricing .container .row-1{
+        width: calc((100% - 50px));
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .pricing .container .plan{
+        gap: 20px;
+        width:100%;
+        padding: 20px 10px 10px 10px;
+    }
+
+    .pricing .container .plan .pl{
+        font-size: 15px;
+        padding: 6px 10px;
+    }
+
+    
+    .pricing .container .plan h3{
+        font-size: 28px;
+    }
+
+    .pricing .container .Features{
+        padding: 10px;
+    }
+    
+    .pricing .container .Features h4{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    
+    .pricing  .container .Features ul{
+        padding: 0px 12px;
+        gap:6px;
+    }
+    
+    
+    .pricing .container .Features ul li{
+     gap: 6px;
+     padding: 8px;
+    }
+    
+    .pricing .container .Features ul li p{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    
+    .pricing .container .plan a{
+        font-size: 12;
+        padding: 12px 12px;
+        margin-top: -20px;    
+    }
+}
+
+.pricing{
+    width: 100%;
+}
+
+.pricing .container{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+
+.pricing .title{
+    display: flex;
+    gap:10px;
+}
+
+.pricing .title-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:6px;
+}
+
+.pricing .title-info h2{
+    font-size: 48px;
+    font-weight: 600;
+    color: rgba(38, 38, 38, 1);
+}
+
+.pricing .title-info p{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(89, 89, 90, 1);
+    line-height: 27px;
+    margin-bottom: 80px;
+}
+
+.pricing  .view .button{ 
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2px;
+}
+
+.pricing  .view {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: calc( ( 100% - 2px ) / 2);
+}
+
+.pricing  .view a{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: rgba(76, 76, 77, 1);
+    padding: 14px 30px;
+    border-radius: 8px;
+    transition: color 1s, background-color 1s;
+
+
+}
+
+.pricing .view a:hover{
+    color: rgba(241, 241, 243, 1);
+    background-color: rgba(255, 149, 0, 1);
+}
+
+.pricing  .view  .active{
+    color: rgba(241, 241, 243, 1);
+    background-color: rgba(255, 149, 0, 1);
+}
+
+.pricing .row{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+
+.pricing .row-1{
+    display: flex;
+    width: calc(100% - 160px);
+    margin: auto;
+    gap: 30px;
+}
+
+.pricing .plan{
+    background-color: rgba(252, 252, 253, 1);
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(241, 241, 243, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: calc( ( 100% - 30px) / 2);
+    padding: 50px 30px 30px 30px;
+}
+
+.pricing .plan .pl{
+    font-size: 22px;
+    font-weight: 500;
+    color:rgba(38, 38, 38, 1);
+    background-color: rgba(255, 249, 240, 1);
+    padding: 12px 22px;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: rgba(255, 234, 204, 1);
+    text-align: center;
+    border-style: solid;
+}
+
+.pricing .plan h3{
+    font-size: 80px;
+    font-weight: 600;
+    color: rgba(38, 38, 38, 1);
+    text-align: center;
+}
+
+.pricing .container .row .plan  span{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(76, 76, 77, 1);
+}
+
+.pricing .Features{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 14px 14px 0px 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(241, 241, 243, 1);
+    padding: 40px;
+}
+
+.pricing .Features h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(38, 38, 38, 1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pricing .Features ul{
+    list-style: none;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+
+.pricing .Features ul li{
+ display: flex;
+ gap: 12px;
+ padding: 14px;
+ border-radius: 8px;
+ border-width: 1px;
+ border-style: solid;
+ border-color: rgba(241, 241, 243, 1);
+}
+
+.pricing .Features ul li p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: rgba(76, 76, 77, 1);
+}
+
+.pricing .plan a{
+    font-size: 18;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    background-color: rgba(255, 149, 0, 1);
+    border-radius: 0px 0px 8px 8px;
+    padding: 20px 24px;
+    margin-top: -50px;
+    transition: background-color 1s, color 1.2s, box-shadow 1s;
+
+}
+
+.pricing .plan a:hover {
+    background-color: white;
+    box-shadow: 2px 4px 20px 0px rgba(150, 150, 150, 0.6);
+    color: rgba(255, 149, 0, 1);
+}
+
+.pricing .Features ul li p span{
+    visibility: hidden;
+}
+
+
+
+/* footer */
+
+@media screen and (max-width: 849px) and (min-width: 745px){
+    body footer {
+        margin-top: 100px;
+    }
+    
+    footer .container .row{
+        gap: 30px;
+        padding: 60px 0px;
+    }
+    
+    footer .container .logo{
+        gap: 30px;
+    }
+    
+    footer .container .logo ul{
+        gap: 15px;
+    }
+    
+    footer .container .logo ul li{
+        gap: 8px;
+    }
+    
+    footer .container .logo ul li a{
+        font-size: 15px;
+    }
+    
+    footer  .container .item{
+        gap: 20px;
+    }
+    
+    footer  .container .item h3{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    
+    footer  .container .item .home, .about, .social{
+        gap: 12px;
+    }
+    
+    footer .container .item ul {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    footer  .container .item  .social .link{
+        gap: 12px;
+    }
+} 
+
+@media screen and (max-width: 745px) and (min-width: 657px){
+    body footer {
+        margin-top: 80px;
+    }
+    
+    footer .container .row{
+        gap: 20px;
+        padding: 50px 0px;
+    }
+    
+    footer .container .logo{
+        gap: 20px;
+    }
+    
+    footer .container .logo ul{
+        gap: 10px;
+    }
+    
+    footer .container .logo ul li{
+        gap: 6px;
+    }
+    
+    footer .container .logo ul li a{
+        font-size: 12px;
+    }
+    
+    footer  .container .item{
+        gap: 18px;
+    }
+    
+    footer  .container .item h3{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    
+    footer  .container .item .home, .about, .social{
+        gap: 10px;
+    }
+    
+    footer .container .item ul {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    footer  .container .item  .social .link{
+        gap: 10px;
+    }
+} 
+
+@media screen and (max-width: 657px){
+    body footer {
+        margin-top: 80px;
+    }
+    
+    footer .container .row{
+        gap: 20px;
+        padding: 50px 0px;
+    }
+    
+    footer .container .logo{
+        gap: 20px;
+    }
+    
+    footer .container .logo ul{
+        gap: 10px;
+    }
+    
+    footer .container .logo ul li{
+        gap: 6px;
+    }
+    
+    footer .container .logo ul li a{
+        font-size: 15px;
+    }
+    
+    footer  .container .item{
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+    
+    footer  .container .item h3{
+        font-size: 20px;
+        line-height: 18px;
+    }
+    
+    footer  .container .item .home, .about, .social{
+        gap: 10px;
+    }
+    
+    footer .container .item ul {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    
+    footer  .container .item  .social .link{
+        gap: 10px;
+    }
+}
+
+
+footer {
+    margin-top: 113px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer .row{
+    gap: 40px;
+    padding: 80px 0px;
+}
+
+footer .logo{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+footer .logo .logo-1{
+    display: flex;
+}
+
+footer .logo ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .logo ul li{
+    display: flex;
+    gap: 10px;
+}
+
+footer .logo ul li a{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(38, 38, 38, 1);
+}
+
+footer .logo a:hover{
+    transition: color 0.5s;
+}
+
+footer .logo a:hover{
+    color: blue;
+}
+
+footer  .item{
+    display: flex;
+    gap: 30px;
+}
+
+footer  .item h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(38, 38, 38, 1);
+    line-height: 30px;
+}
+
+footer  .item .home, .about, .social{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+footer .item ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(89, 89, 90, 1);
+    line-height: 27px;
+}
+
+footer  .item  .social .link{
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
